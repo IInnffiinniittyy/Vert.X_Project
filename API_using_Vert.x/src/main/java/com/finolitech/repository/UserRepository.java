@@ -24,8 +24,8 @@ public class UserRepository {
 
 			ps.setString(1, user.getName());
 			ps.setString(2, user.getEmail());
-			ps.setObject(3, user.getGender());
-			ps.setObject(4, user.getStatus());
+			ps.setString(3, user.getGender().toString());
+			ps.setString(4, user.getStatus().toString());
 			ps.setObject(5, ZonedDateTime.now());
 			
 			// This will insert the data into the "user_info" table and return the number of rows affected.

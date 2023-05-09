@@ -62,7 +62,7 @@ public class UserController {
 	        if(result != null) {
 	        // Return a response indicating success or failure
 	        JsonObject responseJson = new JsonObject();
-	        responseJson.put("success", true);
+//	        responseJson.put("success", true);
 	        context.response()
 	                .putHeader("content-type", "application/json")
 	                .setStatusCode(201) // Created
