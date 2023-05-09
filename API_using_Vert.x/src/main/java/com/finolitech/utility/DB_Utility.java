@@ -10,7 +10,7 @@ public class DB_Utility {
 
 public static Connection provideJDBCConnection() {
 		
-		Connection conn = null;
+		Connection connection = null;
 		
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
@@ -21,12 +21,12 @@ public static Connection provideJDBCConnection() {
 		String url = "jdbc:mysql://localhost:3306/finolitech";
 		
 		try {
-			conn =  DriverManager.getConnection(url, "root", "tanu");
+			connection =  DriverManager.getConnection(url, "root", "tanu");
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 		
-		return conn;
+		return connection;
 	}
 	
 }
