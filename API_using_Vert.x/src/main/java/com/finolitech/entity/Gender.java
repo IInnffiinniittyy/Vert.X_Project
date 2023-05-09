@@ -1,17 +1,7 @@
 package com.finolitech.entity;
 
+
+//an enum type called "Gender" with two values: "MALE" and "FEMALE". 
 public enum Gender {
-  MALE
-,FEMALE
-	
-	
-    
-//    public static Gender fromHex(String hex) {
-//        for (Gender c : Gender.values()) {
-//            if (c.hexValue.equals(hex)) {
-//                return c;
-//            }
-//        }
-//        throw new IllegalArgumentException("Invalid hex value: " + hex);
-//    }
+  MALE,FEMALE
 }

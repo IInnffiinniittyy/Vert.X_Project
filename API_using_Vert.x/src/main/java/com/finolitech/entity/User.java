@@ -9,12 +9,14 @@ public class User {
 	private String email;
 	private Gender gender;
 	private Status status;
-	private ZonedDateTime timestamp;
+	private ZonedDateTime timestamp;  // ZonedDateTime is a Java class that represents a date and time with a time zone.
 	
+	// No Argument constructor
 	public User() {
 		// TODO Auto-generated constructor stub
 	}
 
+	// All Argument constructor
 	public User(Integer id, String name, String email, Gender gender, Status status, ZonedDateTime timestamp) {
 		super();
 		this.id = id;
@@ -34,6 +36,8 @@ public class User {
 		this.timestamp = timestamp;
 	}
 
+	// getters and setters
+	
 	public Integer getId() {
 		return id;
 	}
@@ -82,6 +86,7 @@ public class User {
 		this.timestamp = timestamp;
 	}
 
+	// toString method
 	@Override
 	public String toString() {
 		return "User [id=" + id + ", name=" + name + ", email=" + email + ", gender=" + gender + ", status=" + status

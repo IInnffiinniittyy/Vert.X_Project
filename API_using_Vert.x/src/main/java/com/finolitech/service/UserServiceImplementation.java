@@ -7,7 +7,7 @@ import com.finolitech.repository.UserRepository;
 
 public class UserServiceImplementation implements UserService {
 
-	
+	// creating a new object of UserRepository type, which can be used later in the code...
 	private UserRepository userRepository = new UserRepository();
 	
 	

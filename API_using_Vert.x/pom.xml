@@ -5,15 +5,18 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>Vert.x project</name>
   
-  <!-- Setting the -source and -target of the Java Compiler -->
-  
+  <!-- Setting the -source and -target of the Java Compiler, which means that the code is compiled to run on Java 8 or later. -->
   <properties>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
+    <maven.compiler.source>1.8</maven.compiler.source> <!--  specifies the Java version that the source code is written in -->
+    <maven.compiler.target>1.8</maven.compiler.target> <!-- specifies the minimum Java version that the compiled code should be able to run on. -->
   </properties>
   
 
    <dependencies>
+   
+   <!-- This is a dependency for the Vert.x Core library,
+    Vert.x is a toolkit for building reactive, high-performance, 
+    and scalable applications on the Java Virtual Machine (JVM). -->
    
 		  <!-- https://mvnrepository.com/artifact/io.vertx/vertx-core -->
 		<dependency>
@@ -22,7 +25,9 @@
 		    <version>4.4.1</version>
 		</dependency>
 
-   
+   <!-- This is a dependency for the Vert.x Web library, 
+    Vert.x Web is a set of building blocks for building web applications 
+    and HTTP services on top of the Vert.x toolkit.  -->
    
    		<!-- https://mvnrepository.com/artifact/io.vertx/vertx-web -->
 	     <dependency>
@@ -30,16 +35,9 @@
 		    <artifactId>vertx-web</artifactId>
 		    <version>4.4.1</version>
 		</dependency>
-		
-		
-		
-		<!-- https://mvnrepository.com/artifact/io.vertx/vertx-sql-client -->
-		<!-- <dependency>
-		    <groupId>io.vertx</groupId>
-		    <artifactId>vertx-sql-client</artifactId>
-		    <version>4.4.1</version>
-		</dependency>    -->
-                           
+
+  
+   <!-- It provides a JDBC driver for connecting to a MySQL database from a Java application.   -->                     
 
 		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
 		<dependency>

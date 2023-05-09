@@ -1,7 +1,6 @@
 package com.finolitech.service;
 
 import java.util.List;
-
 import com.finolitech.entity.User;
 
 public interface UserService {
