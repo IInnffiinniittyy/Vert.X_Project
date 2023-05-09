@@ -57,8 +57,9 @@ public class UserController {
 
 	        User newUser = new User(name, email, gender, status, ZonedDateTime.now());
 
-	        userService.addUserDetails(newUser);
+	        String result = userService.addUserDetails(newUser);
 
+	        if(result != null) {
 	        // Return a response indicating success or failure
 	        JsonObject responseJson = new JsonObject();
 	        responseJson.put("success", true);
@@ -66,6 +67,13 @@ public class UserController {
 	                .putHeader("content-type", "application/json")
 	                .setStatusCode(201) // Created
 	                .end(responseJson.encodePrettily());
+	        }
+	        else {
+	        	context.response()
+                .putHeader("content-type", "application/json")
+                .setStatusCode(404) // Not Found
+                .end();
+	        }
 	    });
 	}
 	

@@ -20,11 +20,8 @@ public class UserRepository {
 		 
 		try (Connection connection = DB_Utility.provideJDBCConnection()){
 		
-			PreparedStatement ps= connection.prepareStatement("insert into user_info values(?,?,?,?,?)");
-//			or we can write in this manner
-//			PreparedStatement ps= connection.prepareStatement("insert into user_info (id, name, email, gender, status, timestamp) VALUES (?, ?, ?, ?, ?, ?)");
-			
-//			ps.setInt(1, user.getId());
+			PreparedStatement ps= connection.prepareStatement("insert into user_info(name, email, gender, status, timestamp) values(?,?,?,?,?)");
+
 			ps.setString(1, user.getName());
 			ps.setString(2, user.getEmail());
 			ps.setObject(3, user.getGender());
