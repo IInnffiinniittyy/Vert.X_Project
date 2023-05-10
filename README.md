@@ -28,7 +28,19 @@
  --> The response will be a JSON object that contains the “{ id: <UUID of user record updated> }”.  
 
 <hr/>
-  
+
+## Technology and Tools Used : 
+- Core Java
+- Vert.X library
+- MySQL database
+- JDBC-DAO pattern
+- Git bash
+- Eclipse IDE
+- Postman
+- Google Chrome
+- Notepad
+ 
+<hr/>
 ## How to run the program.
 - Simply clone this repository on your local system.
   
