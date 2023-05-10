@@ -2,7 +2,7 @@
 
 ## Problem Statement.
 
-- To build a GET, PUT and POST API using the VertX framework (Documentation | Eclipse Vert.x (vertx.io)).
+- To build a GET, PUT and POST API using the VertX framework.
 
 - Focus areas : “Core”, “Web” & “Database Client” sections.
 
