@@ -38,7 +38,7 @@
 
   
    <!-- It provides a JDBC driver for connecting to a MySQL database from a Java application.   -->                     
-
+    <!-- Basically using this we will get the connector jar file automatically -->
 		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
 		<dependency>
 		    <groupId>mysql</groupId>

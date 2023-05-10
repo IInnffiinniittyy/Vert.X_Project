@@ -12,7 +12,7 @@ import com.finolitech.entity.Status;
 import com.finolitech.entity.User;
 import com.finolitech.utility.DB_Utility;
 
-// Java class  that provides methods to interact with the DB and perform basic CRUD operations...
+// Java class  that provides methods to interact with the DB and perform basic CRUD operations...// core JDBC
 public class UserRepository {
 	
 //	accepts a User object as a parameter and inserts its attributes into the "user_info" table.	
@@ -20,7 +20,7 @@ public class UserRepository {
 		
 		String message= "Not Registered..";
 		 
-		try (Connection connection = DB_Utility.provideJDBCConnection()){
+		try (Connection connection = DB_Utility.provideJDBCConnection()){  // to get the connection
 		
 //		PreparedStatement object is created from a Connection object named "connection" 
 			PreparedStatement ps= connection.prepareStatement("insert into user_info(name, email, gender, status, timestamp) values(?,?,?,?,?)");

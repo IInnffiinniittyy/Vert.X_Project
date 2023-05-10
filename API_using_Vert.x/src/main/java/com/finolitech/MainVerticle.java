@@ -26,7 +26,7 @@ public class MainVerticle {
 //		Defines three routes on the router object --> Each route is associated with a handler method from the UserController object.
 		router.get("/api/users").handler(controller::getAllUsers);
 		router.post("/api/users").handler(controller::addUser);
-		router.put("/api/users/:id").handler(controller::updateUser);
+		router.put("/api/users/:id").handler(controller::updateUser);   // :: -> method reference(non static method of the controller)
 		
 //		Associating the router with the HTTP server..		
 		server.requestHandler(router);

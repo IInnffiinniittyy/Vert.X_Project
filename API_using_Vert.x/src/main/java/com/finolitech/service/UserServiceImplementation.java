@@ -13,7 +13,7 @@ public class UserServiceImplementation implements UserService {
 	
 	@Override
 	public List<User> getAllUserDetails() {
-		return userRepository.getAllUsers();
+		return userRepository.getAllUsers();  // here we don't have the ORM support so we will use plain JDBC..!
 	}
 
 	@Override

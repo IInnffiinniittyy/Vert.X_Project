@@ -50,9 +50,9 @@ public class UserController {
 //==========================================================================================================================
 //	retrieves the user data from the request body 
 	public void addUser(RoutingContext context) {
-	    context.request().bodyHandler(bodyBuffer -> {
+	    context.request().bodyHandler(bodyBuffer -> {  // bodyBuffer is the consumer here, it will consume one object
 	        JsonObject requestJson = new JsonObject(bodyBuffer);
-
+//			take the data which we will be adding through the body and storing in the new variables!!
 	        String name = requestJson.getString("name");
 	        String email = requestJson.getString("email");
 	        Gender gender = Gender.valueOf(requestJson.getString("gender"));
