@@ -22,7 +22,7 @@ public class MainVerticle {
 		
 // 		Creating a UserController object --> responsible for handling requests related to users..		
 		UserController controller = new UserController();
-
+//      Fluent API
 //		Defines three routes on the router object --> Each route is associated with a handler method from the UserController object.
 		router.get("/api/users").handler(controller::getAllUsers);
 		router.post("/api/users").handler(controller::addUser);
